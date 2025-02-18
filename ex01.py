@@ -1,1 +1,7 @@
-
+print("Hello Nabiha!")
+salary = input("Please enter your salary: ")
+month = input("Please enter the month you want to store the salary for: ")
+print ("Please enter the following percentage respectively:")
+savings_percentage = input("Saving: ")
+rent_percentage = input("Rent: ")
+electricity_percentage = input("Electricity: ")
