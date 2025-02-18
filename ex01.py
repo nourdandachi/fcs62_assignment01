@@ -19,3 +19,28 @@ while rent_percentage>100 or rent_percentage<0:
 electricity_percentage = int(input("Electricity: "))
 while electricity_percentage>100 or electricity_percentage<0:
     electricity_percentage = int(input("Enter a valid number. Electricity: "))
+
+saving_amount= (salary * savings_percentage)/100
+rent_amount= (salary * rent_percentage)/100
+electricity_amount= (salary * electricity_percentage)/100
+
+total_spent_amount= saving_amount + rent_amount + electricity_amount
+
+remainder_amount= salary - total_spent_amount
+
+yearly_rent = rent_amount * 12 
+yearly_electricity_cost= electricity_amount * 12
+
+squared_salary= salary * salary
+
+#or we can use the pow() function: squared_salary= pow(salary,2)
+print("Did you save any additional amount this month?")
+answer= input("(Y or N): ")
+if answer == "Y":
+    additional_amount= int(input("Enter the amount: "))
+    while additional_amount<0:
+        additional_amount = int(input("Enter a valid number: "))
+    
+    additional_savings = additional_amount/saving_amount
+
+
